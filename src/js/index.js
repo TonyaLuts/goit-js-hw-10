@@ -16,7 +16,7 @@ refs.select.addEventListener('change', onSearch);
 fetchBreeds()
   .then(options => {
     refs.select.disabled = false;
-    // refs.select.style.style.display = 'none';
+
     const markup = options
       .map(option => {
         return `<option value="${option.id}"> ${option.name}</option>`;
